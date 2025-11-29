@@ -1,0 +1,20 @@
+
+> testing-and-debugging-ensuring-mern-app-reliability-akubrecah@1.0.0 test:unit
+> npm run test:unit:client && npm run test:unit:server --coverage
+
+
+> testing-and-debugging-ensuring-mern-app-reliability-akubrecah@1.0.0 test:unit:client
+> cd client && CI=true npm test
+
+
+> client@1.0.0 test
+> react-scripts test
+
+
+> testing-and-debugging-ensuring-mern-app-reliability-akubrecah@1.0.0 test:unit:server
+> cd server && npm run test:unit
+
+
+> server@1.0.0 test:unit
+> jest tests/unit
+

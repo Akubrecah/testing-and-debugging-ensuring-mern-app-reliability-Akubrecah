@@ -1,0 +1,28 @@
+{
+  "name": "testing-and-debugging-ensuring-mern-app-reliability-akubrecah",
+  "version": "1.0.0",
+  "description": "This assignment focuses on implementing comprehensive testing strategies for a MERN stack application, including unit testing, integration testing, and end-to-end testing, along with debugging techniques.",
+  "main": "jest.config.js",
+  "scripts": {
+    "install-all": "cd client && npm install && cd ../server && npm install",
+    "setup-test-db": "cd server && npm run setup-test-db",
+    "test": "npm run test:unit && npm run test:integration && npm run test:e2e",
+    "test:unit": "npm run test:unit:client && npm run test:unit:server",
+    "test:unit:client": "cd client && CI=true npm test",
+    "test:unit:server": "cd server && npm run test:unit",
+    "test:integration": "cd server && npm run test:integration",
+    "test:e2e": "cd client && npm run test:e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PLP-MERN-Stack-Development/testing-and-debugging-ensuring-mern-app-reliability-Akubrecah.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/PLP-MERN-Stack-Development/testing-and-debugging-ensuring-mern-app-reliability-Akubrecah/issues"
+  },
+  "homepage": "https://github.com/PLP-MERN-Stack-Development/testing-and-debugging-ensuring-mern-app-reliability-Akubrecah#readme"
+}
